@@ -1,0 +1,263 @@
+{
+  "evaluation_framework": {
+    "title": "Research Copilot Evaluation Questions",
+    "description": "Comprehensive evaluation set for testing Research Copilot on Political Culture domain",
+    "total_questions": 20,
+    "categories": 5,
+    "created_date": "2026-02-28"
+  },
+  "factual_questions": {
+    "category": "Factual Questions",
+    "description": "Questions testing recall of specific information from papers",
+    "difficulty": "low",
+    "expected_strategy": ["v1", "v2"],
+    "questions": [
+      {
+        "id": "fq001",
+        "question": "What is the main contribution of Coe & Vandergrift (2015) work?",
+        "category": "factual",
+        "difficulty": "low",
+        "expected_source": "Coe, A. y Vandergrift, D. (2015)",
+        "evaluation_criteria": ["citation_accuracy", "factual_correctness"]
+      },
+      {
+        "id": "fq002",
+        "question": "In what year was 'Political Culture' concept introduced?",
+        "category": "factual",
+        "difficulty": "low",
+        "expected_source": "Historical reference in papers",
+        "evaluation_criteria": ["citation_accuracy", "temporal_accuracy"]
+      },
+      {
+        "id": "fq003",
+        "question": "Who are the authors of 'Understanding How Young People Do Activism'?",
+        "category": "factual",
+        "difficulty": "low",
+        "expected_source": "Coe et al. (2015)",
+        "evaluation_criteria": ["citation_accuracy", "author_identification"]
+      },
+      {
+        "id": "fq004",
+        "question": "What Universities are commonly mentioned in the study of Political Peruvian Student's Culture?",
+        "category": "factual",
+        "difficulty": "low",
+        "expected_topics": ["UNMSM", "universities", "Peru"],
+        "evaluation_criteria": ["information_completeness", "citation_accuracy"]
+      },
+      {
+        "id": "fq005",
+        "question": "What are the disciplines and sub-disciplines that are interested in the field?",
+        "category": "factual",
+        "difficulty": "low",
+        "expected_topics": ["sociology", "political science", "anthropology", "psychology"],
+        "evaluation_criteria": ["information_completeness", "disciplinary_awareness"]
+      },
+      {
+        "id": "fq006",
+        "question": "In what period of history and years is concentrated the literatura?",
+        "category": "factual",
+        "difficulty": "low",
+        "expected_answer": "1988-2024",
+        "evaluation_criteria": ["temporal_accuracy", "literature_coverage"]
+      },
+      {
+        "id": "fq007",
+        "question": "Is Lima the most studied case in the literatura about Peru?",
+        "category": "factual",
+        "difficulty": "low",
+        "expected_topics": ["Lima", "case studies", "geographic focus"],
+        "evaluation_criteria": ["information_accuracy", "nuanced_response"]
+      }
+    ]
+  },
+  "analytical_questions": {
+    "category": "Analytical Questions",
+    "description": "Questions testing understanding and critical analysis of concepts",
+    "difficulty": "medium-high",
+    "expected_strategy": ["v3", "v4"],
+    "questions": [
+      {
+        "id": "aq001",
+        "question": "What methods do you recommend for studying Political Culture?",
+        "category": "analytical",
+        "difficulty": "high",
+        "expected_topics": ["qualitative methods", "quantitative methods", "mixed methods"],
+        "evaluation_criteria": ["methodological_understanding", "evidence_based", "recommendation_quality"]
+      },
+      {
+        "id": "aq002",
+        "question": "What are the limitations of the sociological perspective?",
+        "category": "analytical",
+        "difficulty": "high",
+        "expected_topics": ["limitations", "critical analysis", "alternative perspectives"],
+        "evaluation_criteria": ["critical_thinking", "nuanced_analysis", "balanced_view"]
+      },
+      {
+        "id": "aq003",
+        "question": "What evidence supports the affirmation that Peruvian youth is very politically conscious?",
+        "category": "analytical",
+        "difficulty": "high",
+        "expected_topics": ["youth activism", "political participation", "evidence"],
+        "evaluation_criteria": ["evidence_based", "citation_quality", "logical_argumentation"]
+      },
+      {
+        "id": "aq004",
+        "question": "What is the evolution of political Peruvian culture through history?",
+        "category": "analytical",
+        "difficulty": "high",
+        "expected_topics": ["historical evolution", "change over time", "Peru"],
+        "evaluation_criteria": ["temporal_analysis", "historical_accuracy", "synthesis_quality"]
+      },
+      {
+        "id": "aq005",
+        "question": "What are the variables that explain the configuration of political Peruvian culture?",
+        "category": "analytical",
+        "difficulty": "high",
+        "expected_topics": ["variables", "causal factors", "structural factors"],
+        "evaluation_criteria": ["factor_identification", "explanatory_power", "evidence_support"]
+      },
+      {
+        "id": "aq006",
+        "question": "What is the relationship between Political Culture and Democracy?",
+        "category": "analytical",
+        "difficulty": "high",
+        "expected_topics": ["political culture", "democracy", "democratic processes"],
+        "evaluation_criteria": ["conceptual_clarity", "relationship_identification", "evidence_based"]
+      },
+      {
+        "id": "aq007",
+        "question": "What is the relationship between Political Culture and Social Movements and/or Protest?",
+        "category": "analytical",
+        "difficulty": "high",
+        "expected_topics": ["social movements", "protest", "political culture", "collective action"],
+        "evaluation_criteria": ["conceptual_connection", "evidence_support", "synthesis_quality"]
+      }
+    ]
+  },
+  "synthesis_questions": {
+    "category": "Synthesis Questions",
+    "description": "Questions requiring integration of information across multiple papers",
+    "difficulty": "high",
+    "expected_strategy": ["v3", "v4"],
+    "questions": [
+      {
+        "id": "sq001",
+        "question": "What common themes appear across these papers?",
+        "category": "synthesis",
+        "difficulty": "high",
+        "expected_topics": ["youth activism", "political participation", "social movements", "education"],
+        "evaluation_criteria": ["theme_identification", "cross_paper_synthesis", "completeness"]
+      },
+      {
+        "id": "sq002",
+        "question": "How has Political Culture studying evolved based on these papers?",
+        "category": "synthesis",
+        "difficulty": "high",
+        "expected_topics": ["evolution", "scholarly development", "methodological changes"],
+        "evaluation_criteria": ["historiographical_accuracy", "trend_identification", "synthesis_quality"]
+      },
+      {
+        "id": "sq003",
+        "question": "What gaps in research do these papers identify?",
+        "category": "synthesis",
+        "difficulty": "high",
+        "expected_topics": ["research gaps", "future directions", "unanswered questions"],
+        "evaluation_criteria": ["gap_identification", "critical_analysis", "research_awareness"]
+      }
+    ]
+  },
+  "edge_cases": {
+    "category": "Edge Cases",
+    "description": "Questions testing system robustness and hallucination prevention",
+    "difficulty": "special",
+    "expected_strategy": ["v1"],
+    "questions": [
+      {
+        "id": "ec001",
+        "question": "What is the capital of France?",
+        "category": "edge_case",
+        "difficulty": "special",
+        "purpose": "Test out-of-domain question handling",
+        "expected_response": "This question is not covered in the papers on Political Culture",
+        "evaluation_criteria": ["hallucination_prevention", "scope_awareness", "appropriate_refusal"]
+      },
+      {
+        "id": "ec002",
+        "question": "Summarize a paper I haven't uploaded",
+        "category": "edge_case",
+        "difficulty": "special",
+        "purpose": "Test system robustness with non-existent sources",
+        "expected_response": "No such paper has been uploaded to the system",
+        "evaluation_criteria": ["hallucination_prevention", "source_verification", "transparency"]
+      }
+    ]
+  },
+  "evaluation_metrics": {
+    "metric_1": {
+      "name": "Citation Accuracy",
+      "description": "Percentage of citations that are accurate and properly formatted",
+      "target": 0.95,
+      "weight": 0.20
+    },
+    "metric_2": {
+      "name": "Answer Relevance",
+      "description": "Relevance of answer to question (1-5 scale)",
+      "target": 4.0,
+      "weight": 0.20
+    },
+    "metric_3": {
+      "name": "Hallucination Rate",
+      "description": "Percentage of information not found in papers (should be < 5%)",
+      "target": 0.02,
+      "weight": 0.20
+    },
+    "metric_4": {
+      "name": "Completeness",
+      "description": "How complete/comprehensive the answer is (1-5 scale)",
+      "target": 4.0,
+      "weight": 0.15
+    },
+    "metric_5": {
+      "name": "Response Time",
+      "description": "Average response time in seconds",
+      "target": 3.0,
+      "weight": 0.15
+    },
+    "metric_6": {
+      "name": "Information Accuracy",
+      "description": "Accuracy of factual claims (1-5 scale)",
+      "target": 4.5,
+      "weight": 0.10
+    }
+  },
+  "strategies_to_evaluate": {
+    "v1": {
+      "name": "Clear Instructions",
+      "recommended_for": ["factual_questions", "edge_cases"],
+      "expected_metrics": ["speed", "citation_accuracy"]
+    },
+    "v2": {
+      "name": "Structured JSON",
+      "recommended_for": ["factual_questions"],
+      "expected_metrics": ["machine_readability", "structured_output"]
+    },
+    "v3": {
+      "name": "Few-Shot Learning",
+      "recommended_for": ["analytical_questions", "synthesis_questions"],
+      "expected_metrics": ["answer_quality", "narrative_flow"]
+    },
+    "v4": {
+      "name": "Chain-of-Thought",
+      "recommended_for": ["analytical_questions", "synthesis_questions"],
+      "expected_metrics": ["reasoning_quality", "completeness", "transparency"]
+    }
+  },
+  "evaluation_process": {
+    "step_1": "Run each question through all 4 strategies (where applicable)",
+    "step_2": "Evaluate responses against metrics",
+    "step_3": "Calculate weighted score for each strategy",
+    "step_4": "Compare strategy performance",
+    "step_5": "Document results in eval/results/",
+    "step_6": "Generate evaluation report"
+  }
+}

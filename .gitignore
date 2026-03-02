@@ -1,61 +1,73 @@
-# Environment variables and secrets
-.env
-.env.local
-.env.*.local
+# Ignore everything by default
+*
 
-# API Keys and credentials
-*.key
-*.pem
-secrets/
+# Allow required root files
+!.gitignore
+!README.md
+!requirements.txt
+!.env.example
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
-.venv/
-ENV/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+# papers/
+!papers/
+!papers/paper_catalog.json
+!papers/paper_*.pdf
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
+# src/
+!src/
+!src/__init__.py
+!src/ingestion/
+!src/ingestion/__init__.py
+!src/ingestion/pdf_extractor.py
+!src/ingestion/text_cleaner.py
+!src/chunking/
+!src/chunking/__init__.py
+!src/chunking/chunker.py
+!src/embedding/
+!src/embedding/__init__.py
+!src/embedding/embedder.py
+!src/vectorstore/
+!src/vectorstore/__init__.py
+!src/vectorstore/chroma_store.py
+!src/retrieval/
+!src/retrieval/__init__.py
+!src/retrieval/retriever.py
+!src/generation/
+!src/generation/__init__.py
+!src/generation/generator.py
+!src/rag_pipeline.py
 
-# Testing
-.pytest_cache/
-.coverage
-htmlcov/
+# prompts/
+!prompts/
+!prompts/v1_delimiters.txt
+!prompts/v2_json_output.txt
+!prompts/v3_few_shot.txt
+!prompts/v4_chain_of_thought.txt
 
-# Data and cache
-*.cache
-*.pickle
-__cache__/
-.chroma/
+# app/
+!app/
+!app/main.py
+!app/pages/
+!app/pages/**
+!app/components/
+!app/components/**
 
-# Logs
-*.log
-logs/
+# eval/
+!eval/
+!eval/questions.json
+!eval/evaluate.py
+!eval/results/
+!eval/results/**
 
-# ChromaDB local storage
-chroma_data/
+# demo/
+!demo/
+!demo/video_link.md
+!demo/screenshots/
+!demo/screenshots/chat_interface.png
+!demo/screenshots/paper_browser.png
+!demo/screenshots/analytics.png
+
+# tests/
+!tests/
+!tests/test_ingestion.py
+!tests/test_chunking.py
+!tests/test_retrieval.py
